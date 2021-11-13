@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {ProductListComponent} from "./product-list/product-list.component";
 import {HttpClientModule} from "@angular/common/http";
 import { CreateProductComponent } from './create-product/create-product.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CreateProductComponent } from './create-product/create-product.componen
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
