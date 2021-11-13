@@ -1,6 +1,10 @@
 export class Product {
-  id: number | undefined;
-  name: string | undefined;
-  description: string | undefined;
-  number: number | undefined;
+  // @ts-ignore
+  id: number;
+  // @ts-ignore
+  name: string;
+  // @ts-ignore
+  description: string;
+  // @ts-ignore
+  number: number;
 }
