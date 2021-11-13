@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Product} from "../product";
 import {ProductService} from "../product.service";
 import {Router} from "@angular/router";
@@ -12,7 +12,8 @@ export class ProductListComponent implements OnInit {
 
   products: Product[] | undefined;
 
-  constructor(private productService: ProductService, private router: Router) { }
+  constructor(private productService: ProductService, private router: Router) {
+  }
 
   ngOnInit(): void {
     this.getProductsList()
@@ -28,6 +29,9 @@ export class ProductListComponent implements OnInit {
     this.router.navigate(['update-product', id])
   }
 
-
-
+  deleteProduct(id: number) {
+    this.productService.deleteProduct(id).subscribe(data => {
+      this.getProductsList();
+    })
+  }
 }

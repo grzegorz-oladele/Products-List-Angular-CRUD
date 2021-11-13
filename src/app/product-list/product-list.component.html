@@ -16,8 +16,8 @@
     <td>{{product.description}}</td>
     <td>{{product.number}}</td>
     <td>
-      <button class="btn btn-danger">Delete</button>
       <button (click)="updateProduct(product.id)" class="btn btn-warning">Update</button>
+      <button (click)="deleteProduct(product.id)" class="btn btn-danger delete">Delete</button>
     </td>
   </tr>
   </tbody>
