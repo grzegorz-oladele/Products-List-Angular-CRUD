@@ -17,7 +17,8 @@
     <td>{{product.number}}</td>
     <td>
       <button (click)="updateProduct(product.id)" class="btn btn-warning">Update</button>
-      <button (click)="deleteProduct(product.id)" class="btn btn-danger delete">Delete</button>
+      <button (click)="deleteProduct(product.id)" class="btn btn-danger margin-button">Delete</button>
+      <button (click)="productDetails(product.id)" class="btn btn-info margin-button">Details</button>
     </td>
   </tr>
   </tbody>
